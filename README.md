@@ -68,7 +68,7 @@ In the `#projects` section, you’ll see a template for displaying your projects
 
 ```html
 <div class="project-card">
-   <img src="project-image1.jpg" alt="Project 1">
+   <img src="placeholder.svg" alt="Project 1">
    <h2>Project Title 1</h2>
    <p>This is a description of the project...</p>
    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>

@@ -1,0 +1,150 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #007BFF;
+  padding: 15px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav h1 {
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Main content (photo + description side by side) */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.about-me {
+  max-width: 600px;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #007BFF;
+  padding: 5px;
+}
+
+.profile-links a:hover {
+  color: #0056b3;
+}
+
+/* Projects section */
+.projects-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default 1 column for mobile */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.project-card h2 {
+  color: #007BFF;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Grid layout for different screen sizes */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  margin-top: 50px;
+}
